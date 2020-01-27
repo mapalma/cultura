@@ -1,0 +1,99 @@
+// $color-primary:     #ff756b;
+// $color-secondary:   #92278f;
+// $color-tertiary:    #941c58 #D95284;;
+
+$color-primary:         #F27781;
+$color-primary-dark: darken(desaturate($color-primary, 15%), 5%);
+$color-secondary:       #4B97BF;
+$color-secondary-dark: darken(desaturate($color-secondary, 15%), 5%);
+$color-tertiary:        #49CAD6; 
+$color-tertiary-dark: darken(desaturate($color-tertiary, 15%), 5%);
+$color-white:           #fff;
+$color-lightgrey:       #f0f0f0;
+$color-coldlightgrey :  #deecf3;
+$color-warmlightgrey:   #e8dcdd;
+$color-midgrey:         #777;
+$color-black:           #443e3e;
+$color-text:            $color-black;
+$color-heading:         $color-text;
+
+
+$font-size-base: 1rem;
+$normal: 400;
+$bold: 700;
+$black: 900;
+
+$h1: 2.7rem;
+$h2: 1.8rem;
+$h3: 1.5rem;
+$h4: 1.3rem;
+$h5: 1.1rem;
+$h6: 1.0rem;
+
+$nav-height: 60px;
+$button-height: 50px;
+$base-padding: 1.5rem;
+$base-margin: 3rem;
+
+// TRANSITION//
+$transition: 0.2s all ease-in;
+
+// BORDER//
+
+$border-debug: 1px solid #f0f;
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+%button {
+    color: $color-white;
+    border: 2px solid $color-white;
+    padding: $base-padding/3 $base-padding;
+    font-size: $font-size-base - 0.2;
+    transition: $transition;
+
+    &:hover {
+        border: 2px solid $color-secondary;
+    }
+}
+
+// MEDIA QUERIES//
+
+$breakpoints: (
+  mobileXL:     480px,
+  tablet:       768px,
+  tabletXL:     920px,
+  laptop :      1024px,
+  basewidth:    1280px
+);
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+    // If $mq-breakpoint is a key that exists in
+    // $mq-breakpoints, get and use the value
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+        $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+    }
+
+    @media screen and (min-width: #{$mq-breakpoint}) {
+        @content;
+    }
+}
+
+
+//Extends
+
+%clean-list{
+    list-style: none;
+    padding: 0;
+}
+
+%list-items-separation {
+    padding-bottom: $base-padding * 1.2;
+    margin-bottom: $base-padding * 1.2;
+    border-bottom: 1px solid $color-lightgrey;
+}
