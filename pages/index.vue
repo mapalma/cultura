@@ -22,7 +22,7 @@
               <p>Maecenas sollicitudin tellus nulla, nec tincidunt ante maximus et. Nullam vel porta nisl. Aenean accumsan euismod eros, a ultricies mauris hendrerit non. Morbi lobortis eleifend diam in tempor. Ut ultrices id risus quis porttitor.</p>
               <nuxt-link to="/about" class="button">More About Us</nuxt-link>
             </div>
-            <div class="panel-half  color-tertiary-dark">
+            <div class="panel-half  color-secondary-dark">
               <nuxt-link to="/teachers">
                <h3>Teachers</h3>
                <p>Diam faucibus, lacinia lectus sed, egestas ipsum.</p>
@@ -161,12 +161,8 @@ export default {
       }
     }
 
-    .color-tertiary-dark {   
-      background: $color-tertiary-dark;
-
-      h3 {
-        color: $color-black;
-      }
+    .color-secondary-dark {   
+      background: $color-secondary-dark;
     }
 
     .color-secondary {
@@ -187,7 +183,7 @@ export default {
 
     .color-secondary,
     .color-tertiary,
-    .color-tertiary-dark {   
+    .color-secondary-dark {   
       color: $color-white;
 
       a {

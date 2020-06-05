@@ -155,7 +155,7 @@ export default {
     font-size: $h4;
 
     a {
-      color: $color-secondary;
+      color: $color-tertiary;
       &:hover {
         color: $color-black;
       }

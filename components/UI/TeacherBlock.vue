@@ -28,9 +28,10 @@
     }
 
     .teacher {
-        background: $color-coldlightgrey;
+        background: $color-tertiary;
         padding: $base-padding;
         margin-bottom: $base-margin;
+        color: $color-white;
        
         .teacher-info {
             display: flex;
@@ -39,7 +40,7 @@
         }
 
         h4 {
-            color: $color-tertiary;
+            color: $color-white;
         }
 
         img {
