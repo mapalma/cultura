@@ -18,7 +18,7 @@
     "cross-env": "^5.2.0",
     "markdown-it": "^9.0.1",
     "markdown-to-html-converter": "^1.0.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "vue-infinite-loading": "^2.4.4",
     "vue-scrollto": "^2.15.0"
   },
